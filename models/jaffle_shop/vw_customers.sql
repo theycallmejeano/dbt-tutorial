@@ -1,4 +1,8 @@
-/* this results in a query, not yet a view */
+{{
+  config(
+    materialized='view'
+  )
+}}
 with customers as (
 
     select
